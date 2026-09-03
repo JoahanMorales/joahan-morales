@@ -35,6 +35,16 @@ const Projects = () => {
       emoji: "🗺️",
     },
     {
+      id: 7,
+      category: "web",
+      title: "ipnprofes",
+      description: t.ipnprofesDesc,
+      tools: ["React", "JavaScript", "Scraping"],
+      link: "https://ipnprofes.com",
+      gradient: "from-rose-500 via-pink-500 to-fuchsia-500",
+      emoji: "🎓",
+    },
+    {
       id: 3,
       category: "ai",
       title: "Multimodal Emotion AI",
@@ -53,16 +63,6 @@ const Projects = () => {
       link: "https://github.com/JoahanMorales/HandTrack-RehabGame",
       gradient: "from-orange-500 via-amber-500 to-yellow-400",
       emoji: "✋",
-    },
-    {
-      id: 7,
-      category: "web",
-      title: "ipnprofes",
-      description: t.ipnprofesDesc,
-      tools: ["React", "JavaScript", "Scraping"],
-      link: "https://ipnprofes.com",
-      gradient: "from-rose-500 via-pink-500 to-fuchsia-500",
-      emoji: "🎓",
     },
     {
       id: 8,

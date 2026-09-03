@@ -269,6 +269,25 @@ export default function Home() {
                 emoji="🌱"
               />
               <Card
+                projectTitle="MercurIA"
+                description={t.secretariaDesc}
+                toolsUsed={["Python", "Voronoi", "GeoPandas"]}
+                projLink="https://github.com/JoahanMorales"
+                src={COVERS["MercurIA"]}
+                linkLabel="repo"
+                gradient="from-blue-600 via-indigo-600 to-violet-600"
+                emoji="🗺️"
+              />
+              <Card
+                projectTitle="ipnprofes"
+                description={t.ipnprofesDesc}
+                toolsUsed={["React", "JavaScript", "Scraping"]}
+                projLink="https://ipnprofes.com"
+                src={COVERS["ipnprofes"]}
+                gradient="from-rose-500 via-pink-500 to-fuchsia-500"
+                emoji="🎓"
+              />
+              <Card
                 projectTitle="Multimodal Emotion AI"
                 description={t.emotionDesc}
                 toolsUsed={["Python", "Whisper", "RoBERTuito", "Wav2Vec2"]}
@@ -287,25 +306,6 @@ export default function Home() {
                 linkLabel="repo"
                 gradient="from-orange-500 via-amber-500 to-yellow-400"
                 emoji="✋"
-              />
-              <Card
-                projectTitle="MercurIA"
-                description={t.secretariaDesc}
-                toolsUsed={["Python", "Voronoi", "GeoPandas"]}
-                projLink="https://github.com/JoahanMorales"
-                src={COVERS["MercurIA"]}
-                linkLabel="repo"
-                gradient="from-blue-600 via-indigo-600 to-violet-600"
-                emoji="🗺️"
-              />
-              <Card
-                projectTitle="ipnprofes"
-                description={t.ipnprofesDesc}
-                toolsUsed={["React", "JavaScript", "Scraping"]}
-                projLink="https://ipnprofes.com"
-                src={COVERS["ipnprofes"]}
-                gradient="from-rose-500 via-pink-500 to-fuchsia-500"
-                emoji="🎓"
               />
               <Card
                 projectTitle="Time-tabling"
