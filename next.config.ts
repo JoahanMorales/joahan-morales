@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Static export for Cloudflare Pages (preset: Next.js Static HTML Export) */
+  output: "export",
   images: {
-    domains: ["i.pinimg.com"],
+    unoptimized: true,
   },
 };
 
