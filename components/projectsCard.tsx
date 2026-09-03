@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 import { useLanguage } from "./LanguageContext";
 
 interface CardProps {
@@ -6,6 +10,8 @@ interface CardProps {
   description: string;
   toolsUsed: string[];
   projLink: string;
+  /** Ruta de la foto en /public, ej: "/projects/lumivia.png". Si el archivo no existe, se muestra el gradiente. */
+  src?: string;
   gradient?: string;
   emoji?: string;
 }
@@ -15,17 +21,29 @@ export const Card = ({
   description,
   toolsUsed,
   projLink,
+  src,
   gradient = "from-violet-600 via-purple-600 to-fuchsia-500",
   emoji = "⚡",
 }: CardProps) => {
   const { lang } = useLanguage();
+  const [imgOk, setImgOk] = useState(true);
+  const showImg = src && imgOk;
   return (
     <div className="border rounded-lg dark:border-zinc-800 h-[365px] w-80 sm:w-96 flex flex-col overflow-hidden bg-white dark:bg-neutral-900">
       <Link href={projLink} target="_blank" rel="noopener noreferrer">
         <div
-          className={`h-[160px] w-full bg-gradient-to-br ${gradient} flex items-center justify-center`}
+          className={`relative h-[160px] w-full bg-gradient-to-br ${gradient} flex items-center justify-center overflow-hidden`}
         >
           <span className="text-6xl drop-shadow-lg">{emoji}</span>
+          {showImg && (
+            <Image
+              src={src}
+              alt={projectTitle}
+              fill
+              className="object-cover"
+              onError={() => setImgOk(false)}
+            />
+          )}
         </div>
       </Link>
       <p className="font-bold text-lg pt-3 pl-3">{projectTitle}</p>

@@ -4,6 +4,7 @@ import { Card } from "@/components/projectsCard";
 import { useState } from "react";
 import en from "../../components/locales/en.json"
 import es from "../../components/locales/es.json"
+import { COVERS } from "@/components/covers";
 
 const translations = { en, es }
 
@@ -179,6 +180,7 @@ const Projects = () => {
                 description={project.description}
                 toolsUsed={project.tools}
                 projLink={project.link}
+                src={COVERS[project.title]}
                 gradient={project.gradient}
                 emoji={project.emoji}
               />
