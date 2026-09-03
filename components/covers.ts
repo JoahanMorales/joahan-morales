@@ -6,13 +6,9 @@
  */
 export const COVERS: Record<string, string> = {
   "Lumivia": "/projects/lumivia.png",
-  "SecretarIA Geo": "/projects/secretaria.png",
+  "MercurIA": "/projects/mercuria.png",
   "Multimodal Emotion AI": "/projects/emotion.png",
   "HandTrack RehabGame": "/projects/handtrack.png",
-  "MindVoice": "/projects/mindvoice.png",
-  "Metro Digitizer": "/projects/metro.png",
   "ipnprofes": "/projects/ipnprofes.png",
   "Time-tabling": "/projects/timetabling.png",
-  "SaesNoti": "/projects/saesnoti.png",
-  "SAT Automator": "/projects/satautomator.png",
 };

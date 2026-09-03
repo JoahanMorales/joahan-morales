@@ -264,6 +264,7 @@ export default function Home() {
                 toolsUsed={["Java 17", "Spring Boot", "GraphHopper", "IBM Cloud"]}
                 projLink="https://github.com/JoahanMorales/LumivIA-F"
                 src={COVERS["Lumivia"]}
+                linkLabel="repo"
                 gradient="from-emerald-600 via-green-600 to-teal-500"
                 emoji="🌱"
               />
@@ -273,6 +274,7 @@ export default function Home() {
                 toolsUsed={["Python", "Whisper", "RoBERTuito", "Wav2Vec2"]}
                 projLink="https://github.com/JoahanMorales/Multimodal-Emotion-Analysis-with-Transformers-Speech-Text"
                 src={COVERS["Multimodal Emotion AI"]}
+                linkLabel="repo"
                 gradient="from-violet-600 via-purple-600 to-fuchsia-500"
                 emoji="🧠"
               />
@@ -282,15 +284,17 @@ export default function Home() {
                 toolsUsed={["Python", "OpenCV", "MediaPipe"]}
                 projLink="https://github.com/JoahanMorales/HandTrack-RehabGame"
                 src={COVERS["HandTrack RehabGame"]}
+                linkLabel="repo"
                 gradient="from-orange-500 via-amber-500 to-yellow-400"
                 emoji="✋"
               />
               <Card
-                projectTitle="SecretarIA Geo"
+                projectTitle="MercurIA"
                 description={t.secretariaDesc}
                 toolsUsed={["Python", "Voronoi", "GeoPandas"]}
                 projLink="https://github.com/JoahanMorales"
-                src={COVERS["SecretarIA Geo"]}
+                src={COVERS["MercurIA"]}
+                linkLabel="repo"
                 gradient="from-blue-600 via-indigo-600 to-violet-600"
                 emoji="🗺️"
               />
@@ -298,7 +302,7 @@ export default function Home() {
                 projectTitle="ipnprofes"
                 description={t.ipnprofesDesc}
                 toolsUsed={["React", "JavaScript", "Scraping"]}
-                projLink="https://github.com/JoahanMorales/profesores-ipn"
+                projLink="https://ipnprofes.com"
                 src={COVERS["ipnprofes"]}
                 gradient="from-rose-500 via-pink-500 to-fuchsia-500"
                 emoji="🎓"
@@ -309,6 +313,7 @@ export default function Home() {
                 toolsUsed={["Java", "JSP", "Servlets"]}
                 projLink="https://github.com/JoahanMorales/Time-tabling-web"
                 src={COVERS["Time-tabling"]}
+                linkLabel="repo"
                 gradient="from-slate-600 via-gray-700 to-zinc-800"
                 emoji="📅"
               />

@@ -27,7 +27,7 @@ const Projects = () => {
     {
       id: 2,
       category: "ai",
-      title: "SecretarIA Geo",
+      title: "MercurIA",
       description: t.secretariaDesc,
       tools: ["Python", "Voronoi", "GeoPandas"],
       link: "https://github.com/JoahanMorales",
@@ -55,32 +55,12 @@ const Projects = () => {
       emoji: "✋",
     },
     {
-      id: 5,
-      category: "ai",
-      title: "MindVoice",
-      description: t.mindvoiceDesc,
-      tools: ["ElevenLabs", "n8n", "Redis"],
-      link: "https://github.com/JoahanMorales",
-      gradient: "from-cyan-500 via-sky-500 to-blue-500",
-      emoji: "🎙️",
-    },
-    {
-      id: 6,
-      category: "ai",
-      title: "Metro Digitizer",
-      description: t.metroDesc,
-      tools: ["Python", "OpenCV", "Heatmaps"],
-      link: "https://github.com/JoahanMorales/demo-A-estrella-metro",
-      gradient: "from-red-500 via-rose-500 to-pink-500",
-      emoji: "🚇",
-    },
-    {
       id: 7,
       category: "web",
       title: "ipnprofes",
       description: t.ipnprofesDesc,
       tools: ["React", "JavaScript", "Scraping"],
-      link: "https://github.com/JoahanMorales/profesores-ipn",
+      link: "https://ipnprofes.com",
       gradient: "from-rose-500 via-pink-500 to-fuchsia-500",
       emoji: "🎓",
     },
@@ -93,26 +73,6 @@ const Projects = () => {
       link: "https://github.com/JoahanMorales/Time-tabling-web",
       gradient: "from-slate-600 via-gray-700 to-zinc-800",
       emoji: "📅",
-    },
-    {
-      id: 9,
-      category: "web",
-      title: "SaesNoti",
-      description: t.saesnotiDesc,
-      tools: ["TypeScript", "React"],
-      link: "https://github.com/JoahanMorales/SaesNoti",
-      gradient: "from-indigo-500 via-purple-500 to-pink-500",
-      emoji: "🔔",
-    },
-    {
-      id: 10,
-      category: "backend",
-      title: "SAT Automator",
-      description: t.satautoDesc,
-      tools: ["Java", "Extension", "Excel Macros"],
-      link: "https://github.com/JoahanMorales",
-      gradient: "from-green-600 via-emerald-600 to-lime-500",
-      emoji: "🤖",
     },
   ];
 
@@ -181,6 +141,7 @@ const Projects = () => {
                 toolsUsed={project.tools}
                 projLink={project.link}
                 src={COVERS[project.title]}
+                linkLabel={project.link.startsWith("https://github.com") ? "repo" : "site"}
                 gradient={project.gradient}
                 emoji={project.emoji}
               />

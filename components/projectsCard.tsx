@@ -12,6 +12,8 @@ interface CardProps {
   projLink: string;
   /** Ruta de la foto en /public, ej: "/projects/lumivia.png". Si el archivo no existe, se muestra el gradiente. */
   src?: string;
+  /** "site" → botón Website/Sitio · "repo" → botón Repo */
+  linkLabel?: "site" | "repo";
   gradient?: string;
   emoji?: string;
 }
@@ -22,6 +24,7 @@ export const Card = ({
   toolsUsed,
   projLink,
   src,
+  linkLabel = "site",
   gradient = "from-violet-600 via-purple-600 to-fuchsia-500",
   emoji = "⚡",
 }: CardProps) => {
@@ -64,7 +67,7 @@ export const Card = ({
         <Link href={projLink} target="_blank" rel="noopener noreferrer">
           <button className="dark:hover:bg-zinc-300 hover:bg-zinc-300 active:scale-105 transition-all duration-150 rounded-md py-1 ml-2 mt-3 flex border-neutral-300 border items-center dark:bg-white dark:text-black text-sm px-2">
             <span className="text-xs">↗</span>
-            <p className="pl-2">{lang === "en" ? "Website" : "Sitio"}</p>
+            <p className="pl-2">{linkLabel === "repo" ? "Repo" : lang === "en" ? "Website" : "Sitio"}</p>
           </button>
         </Link>
       </div>
